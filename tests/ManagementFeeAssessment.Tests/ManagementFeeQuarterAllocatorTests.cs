@@ -200,8 +200,8 @@ public class ManagementFeeQuarterAllocatorTests
 
         Assert.Equal(2, result.Count);
 
-        decimal expectedQ1 = 1510m * (60m / totalDays);
-        decimal expectedQ2 = 1510m * (91m / totalDays);
+        decimal expectedQ1 = 1510m * 60m / totalDays;
+        decimal expectedQ2 = 1510m * 91m / totalDays;
 
         Assert.Equal(expectedQ1, result.Single(a => a.QuarterName == "Q1 2024").ProratedAmount);
         Assert.Equal(expectedQ2, result.Single(a => a.QuarterName == "Q2 2024").ProratedAmount);
