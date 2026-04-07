@@ -16,4 +16,16 @@ public class ManagementFeeQuarterAllocator
     {
         throw new NotImplementedException();
     }
+
+    /// <summary>
+    /// For each management fee line, distributes its Amount across every quarter it overlaps,
+    /// proportional to the number of days the line falls within each quarter relative to
+    /// the total number of days in the line.
+    /// </summary>
+    public IEnumerable<QuarterFeeAllocation> ProrateFeeAcrossQuarters(
+        IEnumerable<ManagementFeeLine> lines,
+        IEnumerable<Quarter> quarters)
+    {
+        throw new NotImplementedException();
+    }
 }
