@@ -1,0 +1,19 @@
+{
+  "name": "Management Fee Quarterization",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscode-dotnet-runtime"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "dotnet.defaultSolution": "quarterization.sln"
+      }
+    }
+  },
+  "postCreateCommand": "dotnet restore",
+  "forwardPorts": []
+}
